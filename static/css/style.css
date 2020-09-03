@@ -385,7 +385,7 @@ input, textarea,select{
     position: absolute;
     bottom: 0;
     right: 50px;
-    width: 350px;
+    width: 450px;
 }
 .home .intro img.phone{
     display: none;
@@ -756,6 +756,7 @@ input, textarea,select{
 .certificate .certificate-item-inner:hover .certificate-info{
     opacity: 1;
 }
+
 .certificate .certificate-item .certificate-info h4{
     font-size: 18px;
     font-weight: 700;
@@ -930,7 +931,16 @@ input, textarea,select{
 }
 .portfolio .portfolio-item .portfolio-info .icon .fa{
     line-height: 40px;
-
+    color: #151515;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .portfolio .portfolio-item-inner .portfolio-info{
+        opacity: .8;
+    }
+    .portfolio .portfolio-item-inner .portfolio-info .icon{
+        opacity: 1;
+    }
 }
 
 /* lightbox */

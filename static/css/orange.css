@@ -11,7 +11,6 @@
 .blog .blog-item-inner .blog-info .blog-tags a,
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
-.portfolio .portfolio-item .portfolio-info .icon .fa,
 body.dark .portfolio .portfolio-filter button.active,
 .portfolio .portfolio-filter button.active,
 .certificate .certificate-item .certificate-item-inner .icon .fa,
@@ -40,3 +39,4 @@ body.dark .aside .nav li a.active,
 .portfolio .portfolio-filter button.active{
     border-color: #FFC107;
 }
+

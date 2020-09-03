@@ -8,11 +8,15 @@
         <div class="row">
             {% for certificate in site.certificates%}
             <!-- Portfolio Item  -->
+            
             <div class="certificate-item padd-15">
+                <a target="_blank" href="{{ certificate.pdf }}">
                 <div class="certificate-item-inner shadow-dark">
+                    
                     <div class="certificate-img">
                         <img src="{{ certificate.img_path }}" alt="portfolio">
                     </div>
+                    
                     <div class="certificate-info">
                         <h4>{{ certificate.title }}</h4>
                         <!-- <a href="https://www.instagram.com" target="_blank">
@@ -22,6 +26,7 @@
                         </a> -->
                     </div>
                 </div>
+            </a>            
             </div>
             <!-- Portfolio Item End -->
             {% endfor %}
