@@ -1,0 +1,34 @@
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Latest Blogs</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Blog Item  -->
+            {% for blog in site.blogs %}
+            <div class="blog-item padd-15">
+                <div class="blog-item-inner shadow-dark">
+                    <div class="blog-img">
+                        <img src="{{ blog.img_path }}" alt="blog">
+                        <div class="blog-date">
+                            {{ blog.date | date: "%b %-d, %Y" }}
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <h4 class="blog-title">{{ blog.title }}</h4>
+                        <p class="blog-description">
+                            {{ blog.description }}
+                        </p>
+                        <p class="blog-tags">Tags : <a href="#">{{ blog.tag1 }}</a>, <a href="#">{{ blog.tag2 }}</a></p>
+                        <a class="read-more" href="{{ blog.permalink }}">Read More <i class="fa fa-arrow-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- Blog Item End -->
+            
+        </div>
+    </div>
+</section>

@@ -1,0 +1,134 @@
+<style>
+    h1 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 100;
+    color: #747474;
+    text-align: left !important;
+  }
+  h1 span.text {
+    padding: 0;
+    padding-right: 4px;
+    border-right: 2px solid #747474;
+    animation: blink 0.75s infinite;
+  }
+  h1 .blue {
+    color: #4480ff;
+  }
+  h1 .green {
+    color: #4caf50;
+  }
+  h1 .yellow {
+    color: #f4b400;
+  }
+  h1 .red {
+    color: #f44336;
+  }
+
+
+  @keyframes blink {
+    from {
+      border: none;
+    }
+    to {
+      border-color: 2px solid #747474;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    h1 {
+      font-size: 22px;
+      text-align: center !important;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  @media(max-width: 767px){
+    .home .intro .intro-box{
+        padding: 5px 0;
+    }
+    .home .intro .intro-box h2{
+        font-size: 30px;
+        text-align: center !important;
+    }
+  }
+  
+</style>
+<section class="home section active" id="home">
+    <div class="container">
+        <div class="intro">
+            <div class="intro-box">
+                <img src="/static/images/bg.jpg" alt="" class="bg">
+                <h2>Discover My Amazing <br> Art Space!</h2>
+                <h1><span class="text blue">Rahul T</span></h1>
+                <!-- <img class="dp" src="/static/images/face.jpeg" alt=""> -->
+            </div>
+             <img class="phone" src="/static/images/pro.JPG" alt="Profile" class="shadow-dark">
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="https://instagram.com/rahulmanojcet"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/rawho"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/rahulmanojcet"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/+919747406685"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+    const words = ["I am Rahul T", "I am a Web Developer", "I am a Python Developer", "Welcome"],
+  colors = ["yellow", "green", "yellow", "red"],
+  text = document.querySelector(".text");
+
+// Generator (iterate from 0-3)
+function* generator() {
+  var index = 0;
+  while (true) {
+    yield index++;
+
+    if (index > 3) {
+      index = 0;
+    }
+  }
+}
+
+// Printing effect
+function printChar(word) {
+  let i = 0;
+  text.innerHTML = "";
+  text.classList.add(colors[words.indexOf(word)]);
+  let id = setInterval(() => {
+    if (i >= word.length) {
+      deleteChar();
+      clearInterval(id);
+    } else {
+      text.innerHTML += word[i];
+      i++;
+    }
+  }, 200);
+}
+
+// Deleting effect
+function deleteChar() {
+  let word = text.innerHTML;
+  let i = word.length - 1;
+  let id = setInterval(() => {
+    if (i >= 0) {
+      text.innerHTML = text.innerHTML.substring(0, text.innerHTML.length - 1);
+      i--;
+    } else {
+      text.classList.remove(colors[words.indexOf(word)]);
+      printChar(words[gen.next().value]);
+      clearInterval(id);
+    }
+  }, 100);
+}
+
+// Initializing generator
+let gen = generator();
+
+printChar(words[gen.next().value]);
+
+</script>

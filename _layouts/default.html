@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul T | Portfolio</title>
+
+    <!-- CSS TEMPLATES -->
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/orange.css" type="text/css">
+    
+
+    
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="loader"></div>
+</div>
+<!-- Preloader End-->
+
+
+
+<!-- Main Container -->
+<div class="main-container">
+    <!-- Aside -->
+    <div class="aside">
+        <!-- Nav Toggler Btn -->
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <!-- Nav -->
+        <div class="aside-inner">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/">Rahul</a>
+            </div>
+            
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#certificates"><i class="fa fa-list"></i> certificates</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Projects</a></li>
+                <li><a href="#blog"><i class="fa fa-envelope"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+            <!-- copyright -->
+            <div class="copyright-text">
+                &copy; 2020 Rahul T CET
+            </div>
+        </div>
+    </div>
+    <!-- Aside End -->
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section  -->
+            {% include home.html %}
+        <!-- Home section End -->
+
+        <!-- About Section  -->
+            {% include about.html%}
+        <!-- About Section End -->
+        <!-- certificate Section  -->
+            {% include certificates.html %}
+        <!-- certificate Section End -->
+
+        <!-- Portfolio Section -->
+            {% include portfolio.html %}
+        <!-- Portfolio Section End-->
+
+        <!-- Blog Section  -->
+            {% include blog.html %}
+        <!-- Blog Section End -->
+
+        <!-- Contact SEction  -->
+            {% include contact.html %}
+        <!-- Contact Section End  -->
+    </div>
+    <!-- Main Content End -->
+</div>
+<!-- Main Container -->
+<!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img src="/static/images/pro.JPG" alt="" class="lightbox-img" onclick="nextItem()">
+            <div class="lightbox-caption">
+                <div class="caption-text">Web Design</div>
+                <div class="caption-counter">1 of 6</div>
+            </div>
+        </div>
+        <div class="lightbox-controls">
+            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+
+        </div>
+    </div>
+<!-- Lightbox End-->
+
+
+
+
+<!-- Template JS  -->
+<script src="/static/js/script.js"></script>
+
+
+</body>
+</html>
