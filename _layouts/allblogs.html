@@ -1,0 +1,140 @@
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="/static/css/orange.css">
+<style>
+.section .container{
+        padding-top: 70px;
+    }
+    .aside .nav-toggler{
+        display: -ms-flexbox;
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+    .aside{
+        left: -270px;
+    }
+    .aside.open{
+        left: 0px;
+    }
+    .section{
+        left: 0;
+    }
+    .section.open{
+        left: 270px;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+
+    }
+    @media (max-width: 1199px){
+    .section .container{
+        padding-top: 70px;
+    }
+    .aside .nav-toggler{
+        display: -ms-flexbox;
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+    .aside{
+        left: -270px;
+    }
+    .aside.open{
+        left: 0px;
+    }
+    .section{
+        left: 0;
+    }
+    .section.open{
+        left: 270px;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+
+    }
+}
+
+@media (max-width: 911px) and (min-width: 767px){
+    .blog .blog-item,
+    .portfolio .portfolio-item,
+    .certificate .certificate-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .contact .contact-form .col-6,
+    .blog .blog-item,
+    .certificate .certificate-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio .portfolio-filter button{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px){
+    .contact .contact-info-item,
+    .portfolio .portfolio-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Rahul T</title>
+</head>
+<body>
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>All Blogs</h2>
+                </div>
+            </div>
+            <div class="row blog-container">
+                <!-- Blog Item  -->
+                {% for blog in site.blogs %}
+                <div class="blog-item padd-15">
+                    <div class="blog-item-inner shadow-dark">
+                        <div class="blog-img">
+                            <img src="{{ blog.img_path }}" alt="blog">
+                        </div>
+                        <div class="blog-info">
+                            <h4 class="blog-title">{{ blog.title }}</h4>
+                            <p class="blog-description">
+                                {{ blog.description }}
+                            </p>
+                            <p class="blog-tags">Tags : <a href="#">{{ blog.tag1 }}</a>, <a href="#">{{ blog.tag2 }}</a></p>
+                            <a class="read-more" href="{{ blog.permalink }}">Read More <i class="fa fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- Blog Item End -->
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

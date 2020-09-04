@@ -1,4 +1,4 @@
 ---
-layout: blogs
+layout: allblogs
 permalink: /blogs/
 ---
