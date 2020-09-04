@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs | Rahul T</title>
+    <meta name="description" content="Hi! My name is Rahul T (@rahulmanojcet). I am a Web Developer, and I'm very passionate and dedicated to my work. I am a student at College of Engineering, Trivandrum. I acquired the skills and knowledge necessary to make your project a success, with a lot of practice. I enjoy every step of the design process">
+    <meta name="robots" content="index, follow" />
+    <title>Blogs | Rahul T | rahulmanojcet</title>
 </head>
 <body>
     
@@ -31,7 +33,7 @@
                 <div class="blog-item padd-15">
                     <div class="blog-item-inner shadow-dark">
                         <div class="blog-img">
-                            <img src="{{ blog.img_path }}" alt="blog">
+                            <img src="{{ blog.img_path }}" alt="blog-{{ blog.title }}">
                         </div>
                         <div class="blog-info">
                             <h4 class="blog-title">{{ blog.title }}</h4>
