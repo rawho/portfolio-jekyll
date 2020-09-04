@@ -1,11 +1,11 @@
 ---
 layout: blogs
-permalink: /blogs/responsive-web/
-title: Responsive
-img_path: /static/images/pro.JPG
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum libero veniam accusamus deleniti, assumenda cumque?
-tag1: Html
-tag2: css
+permalink: /blogs/host-jekyll/
+title: How to Host Jekyll
+img_path: /static/images/blogs/jekyll.png
+description: Jekyll is a simple, blog-aware, static site generator. Firebase provides free hosting.
+tag1: jekyll
+tag2: firebase
 ---
 
 
