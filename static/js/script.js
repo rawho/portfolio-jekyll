@@ -180,3 +180,13 @@ function asideSectionTogglerBtn() {
 }
 
 
+// contact form
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyvozAyjpDbEvVsIROyWT8Kzjfkz2RmFU05k-Tb8_ifv2cOxw9k/exec'
+const form = document.forms['google-sheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thanks for contacting!!"))
+    .catch(error => console.error('Error!', error.message))
+})
