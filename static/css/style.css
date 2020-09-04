@@ -154,7 +154,7 @@ input, textarea,select{
     display: none!important;
 }
 /* Preloader */
-.preloader{
+/* .preloader{
     background-color: #222222;
     position: fixed;
     left: 0;
@@ -183,7 +183,7 @@ input, textarea,select{
     border-bottom: 4px solid transparent;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-}
+} */
 
 
 @-webkit-keyframes spin{
