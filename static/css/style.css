@@ -1314,7 +1314,7 @@ input, textarea,select{
 }
 
 @media (max-width: 991px){
-    /* .blog .blog-item, */
+    .blog .blog-item,
     .portfolio .portfolio-item,
     .certificate .certificate-item{
         -ms-flex: 0 0 50%;
@@ -1324,7 +1324,7 @@ input, textarea,select{
 }
 @media (max-width: 767px){
     .contact .contact-form .col-6,
-    /* .blog .blog-item, */
+    .blog .blog-item,
     .certificate .certificate-item,
     .about .about-content .experience,
     .about .about-content .education,
