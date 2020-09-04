@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/markdown.css">
@@ -51,6 +51,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         margin-left: 25%;
         margin-right: 25%;
         font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+    .container .final{
+        margin-top: 100px;
     }
 
     .container h1, h2, h3{
@@ -78,6 +83,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
             max-width: 95%;
         }
     }
+    .footer{
+        font-family: monospace;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .final a{
+        color: #ffc107;
+    }
+    .final a:hover{
+        text-decoration: none;
+        
+    }
+    .final p:hover:nth-child(1) {
+        transform: translateX(-20px);
+    }
+    .final p:hover:nth-child(2) {
+        transform: translateX(20px);
+    }
 </style>
 <body>
     <header>
@@ -88,6 +111,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     </header>
     <div class="container markdown-body">
         {{ content }}
+        <div class="final">
+            <p style="float: left;"><a href="/blogs/"><i class="fa fa-arrow-left"></i> &nbsp; see all blogs</p></a>
+            <p style="float: right;"><a href="/">Go to Home &nbsp; <i class="fa fa-arrow-right"></i></p></a> 
+        </div>
+    </div>
+
+    
+    <hr style="width: 90%; margin: auto;">
+    
+    
+    <div class="footer">
+        <center><p>&copy; Rahul T - ALL RIGHTS RESERVED</p></center>
     </div>
         
 
