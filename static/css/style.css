@@ -1217,8 +1217,26 @@ input, textarea,select{
     height: 50px;
     padding: 0 50px;
 }
-
-
+.success-msg{
+    position: fixed;
+    top: 0px;
+    left: 40%;
+    min-width: 30%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    background-color: #DFF2BF;
+    border-radius: 5px;
+    color: #270;
+    text-align: center;
+    display: none;
+}
+@media(max-width: 767px){
+    .success-msg{
+        left: 50px;
+    }
+}
 /* Dark Body  */
 
 

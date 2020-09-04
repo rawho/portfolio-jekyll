@@ -39,7 +39,7 @@
                     </div>
                     <div class="form-item col-6 padd-15">
                         <div class="form-group">
-                            <input type="text" name="Email" class="form-control" placeholder="Email*" required="">
+                            <input type="email" name="Email" class="form-control" placeholder="Email*" required="">
                         </div>
                     </div>
                 </div>
@@ -60,10 +60,14 @@
                 <div class="row">
                     <div class="col-12 padd-15">
                         <!-- <button type="submit" class="btn">Send Message</button> -->
-                        <input type="submit" name="Submit" class="btn" value="Send Messege">
+                        <input type="submit" name="Submit" class="btn" id="send-msg" value="Send Messege">
                     </div>
                 </div>
             </form>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <div class="success-msg" >
+                <p>Thank You for your response!! </p>
+            </div>
         </div>
     </div>
 </section>

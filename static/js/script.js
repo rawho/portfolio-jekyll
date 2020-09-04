@@ -183,10 +183,29 @@ function asideSectionTogglerBtn() {
 // contact form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyvozAyjpDbEvVsIROyWT8Kzjfkz2RmFU05k-Tb8_ifv2cOxw9k/exec'
 const form = document.forms['google-sheet']
+function success() {
+   let x = document.querySelector(".success-msg").style.display = 'block'
+   setTimeout(function(){
+            document.querySelector(".success-msg").style.display = "none"
+        }, 3000)
+}
+
+document.addEventListener('submit', function(){
+    document.querySelector('#send-msg').onclick = function(){
+        success()
+    }
+})
+$(document).ready(function(){
+    $('form').on("submit",function(){
+        success()
+    });
+});
 
 form.addEventListener('submit', e => {
+    
     e.preventDefault()
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => alert("Thanks for contacting!!"))
+    .then(response => success())
     .catch(error => console.error('Error!', error.message))
 })
