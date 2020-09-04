@@ -1,0 +1,4 @@
+---
+layout: blogs
+permalink: /blogs/
+---
