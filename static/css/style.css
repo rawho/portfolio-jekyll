@@ -126,6 +126,7 @@ input, textarea,select{
     max-width: 1100px;
     width: 100%;
     margin: auto;
+    margin-bottom: 200px;
 }
 .shadow-dark{
     -webkitbox-shadow: 0 0 20px rgba(48,46,77,0.15);
