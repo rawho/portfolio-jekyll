@@ -77,8 +77,8 @@ while True:
 
         full_email1 = (f"From: {your_name} <{your_email}>\n"
                     f"To: {your_name} <{your_email}>\n"
-                    f"Subject: {subject}\n\n"
-                    f"{message}"
+                    f"Subject: {subject} from {name}\n\n"
+                    f"from: {email} \n\n {message}"
                     )
         sub = 'Thank you for messeging'
         mes = "This is just to confirm that the email is sent successfully. I will get in touch with you soon"

@@ -1,4 +1,20 @@
 <link rel="stylesheet" href="/static/css/home.css">
+<style>
+  .counter{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  #count{
+    color: #ffc107;
+  }
+  .container .counter p{
+    font-size: 18px;
+  }
+</style>
 <section class="home section active" id="home">
     <div class="container">
         <div class="intro">
@@ -17,9 +33,13 @@
                     <li><a href="https://wa.me/+919747406685"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>
         </div>
+        <div class="counter">
+          <p>This page was viewed</p>
+          <h2 id="count">0</h2>
+          <p>Times</p>
+        </div>
     </div>
 </section>
-
 <script>
     const words = ["I am Rahul T", "I am a Web Developer", "I am a Python Developer", "Welcome"],
   colors = ["yellow", "green", "yellow", "red"],
@@ -73,5 +93,20 @@ function deleteChar() {
 let gen = generator();
 
 printChar(words[gen.next().value]);
+
+
+
+// counter
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount(){
+  fetch("https://api.countapi.xyz/update/rahulmanoj.xyz/rahul?amount=1")
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value;
+  })
+}
 
 </script>
