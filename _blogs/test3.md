@@ -1,76 +1,118 @@
 ---
 layout: blogs
-permalink: /blogs/host-jekyll/
-title: How to Host Jekyll
-img_path: /static/images/blogs/jekyll.png
-description: Jekyll is a simple, blog-aware, static site generator. Firebase provides free hosting.
-tag1: jekyll
-tag2: firebase
+permalink: /blogs/who-is-rahul-t-rahulmanojcet/
+title: Who is Rahul T
+img_path: /static/images/pro.JPG
+description: You may be thinking who is Rahul T ?? (rahulmanojcet), he is a Web Developer, he is a student at College of Engineering, Trivandrum.
+tag1: Rahul T
+tag2: CET
 ---
-
-
-Jekyll is a simple, blog-aware, static site generator. You create your content as text files (Markdown), and organize them into folders. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.
-
-Firebase is a mobile and web application development platform which is owned by Google. One of its feature is the ability to deliver web app assets with speed and security.
-
-
-
-## Requirements
-
-Needs NPM, you can find the documentation [here](https://www.npmjs.com/get-npm)
-
-
-## Steps
-
-1. **Install firebase-tools**
-   
-   ```
-   sudo npm install -g firebase-tools
-   ```
-
-2. **Login to firebase**
-   
-   ```
-   firebase login
-   ```
-
-   This will open Google login page in your browser, login with the account you want to create the firebase account / project in.
-
-3. **Create a project in Firebase Console**
-   - Once you are logged in, visit [console.firebase.](https://console.firebase.google.com/)
-   - Click on "Add Project".
-    ![firebase](/static/images/blogs/jekyll-host/1.png)
-
-    - Give a name to your project.
-    - Accept the terms and conditions.
-    - Click "Create Project".
-4.  **Intialize Firebase in your Jekyll folder**
-
-    ```
-    cd <your jekyll folder path>
-    ```
-
-    ```
-    firebase init
-    ```
-
-5.  **Follow these steps**
-   
-    - Select Hosting by moving the arrow down and hitting "Space" and then "Enter".
+<style>
+     .social-container {
+    width: auto;
+    /* margin: 40vh auto; */
+    text-align: center;
+  }
   
-  
-    ![firebase](/static/images/blogs/jekyll-host/2.png)
+  .social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em 0;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+  }
+  .social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+  }
+  .social-icons a {
+    display: inline-block;
+  }
+  .social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #00B5F5, #002A8F);
+    transition: all 265ms ease-out;
+  }
+  .social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+  }
+  .social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #00B5F5;
+    background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+  }
+</style>
 
-    - Select the app you just created in Firebase Console
-    
-    ![firebase](/static/images/blogs/jekyll-host/3.png)
-    
-    - Setup the hosting options that work for you.
+### Hi there, I'm  [Rahul T !](https://rahulmanoj.xyz) 👋
 
-    ![firebase](/static/images/blogs/jekyll-host/4.png)
+<br>
+<br>
+<div class="social-container">
+   <ul class="social-icons">
+      <li><a href="https://instagram.com/rahulmanojcet"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://github.com/rawho"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://linkedin.com/in/rahulmanojcet"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://wa.me/+919747406685"><i class="fa fa-whatsapp"></i></a></li>
+   </ul>
+</div>
 
-6. **Deploy**
-   
-   ```
-   firebase deploy
-   ```
+<br>
+<br>
+
+## I'm a Student at College Of Engineering, Trivandrum. 💪 
+
+- 🔭 I’m currently working on a [Bitflip Website](https://rawho.github.io)
+- 🌱 I’m currently learning everything 🤣
+- 🥅 2020 Goals: Contribute more to Open Source projects
+- ⚡ Fun fact: I love to play Volleyball and Cricket
+
+
+
+---
+<br>
+<a href="https://github.com/rawho">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rawho&theme=dark&hide_langs_below=1" />
+</a>
+<br>
+
+<a href="https://github.com/rawho">
+ <img align="center" src="https://github-readme-stats.vercel.app/api?username=rawho&show_icons=true&theme=merko&line_height=27" alt="Rahul's github stats"/>
+</a>
+
+<br>
+
+## Favorites
+
+
+<br>
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rawho&repo=assBOT&theme=dark)](https://github.com/rawho/assBOT)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rawho&repo=flipkart-scraper&theme=dark)](https://github.com/rawho/flipkart-scraper)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rawho&repo=linkedin-autofollow&theme=dark)](https://github.com/rawho/linkedin-autofollow)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rawho&repo=rawho.github.io&theme=dark)](https://github.com/rawho/rawho.github.io) 
+
+<br><br><br>
+
+## My Github Activity
+
+<img src="http://ghchart.rshah.org/rawho" alt="Name Your GitHub chart">
