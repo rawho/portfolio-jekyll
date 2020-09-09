@@ -111,8 +111,4 @@ tag2: CET
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rawho&repo=linkedin-autofollow&theme=dark)](https://github.com/rawho/linkedin-autofollow)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rawho&repo=rawho.github.io&theme=dark)](https://github.com/rawho/rawho.github.io) 
 
-<br><br><br>
-
-## My Github Activity
-
-<img src="http://ghchart.rshah.org/rawho" alt="Name Your GitHub chart">
+<br>
