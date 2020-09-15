@@ -67,7 +67,7 @@ tag2: CET
 
 <br>
 
-<center><img src="/static/images/pro1.JPG" alt="rahulmanojcet- Rahul T"></center>
+<center><img src="/static/images/pro1.JPG" alt="who is rahulmanojcet -Rahul T"></center>
 
 <br>
 <div class="social-container">
