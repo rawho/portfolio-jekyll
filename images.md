@@ -1,0 +1,5 @@
+---
+permalink: /images/
+layout: gallery
+---
+
