@@ -66,6 +66,9 @@ tag2: CET
 ### Hi there, I'm  [Rahul T !](https://rahulmanoj.xyz) 👋
 
 <br>
+
+<center><img src="/static/images/pro1.JPG" alt="rahulmanojcet- Rahul T"></center>
+
 <br>
 <div class="social-container">
    <ul class="social-icons">
