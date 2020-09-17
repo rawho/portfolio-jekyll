@@ -104,7 +104,7 @@ tag2: CET
 
 <br>
 
-## Favorites
+## Favorite Projects
 
 
 <br>
