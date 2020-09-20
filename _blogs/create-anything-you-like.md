@@ -2,10 +2,11 @@
 layout: blogs
 permalink: /blogs/create-anything-you-like/
 title: Create anything you like
-img_path: /static/images/blogs/jekyll.png
+img_path: /static/images/blogs/feynman.png
 description: Here are a big list of links you can go through inorder to build any thing you think. !!
-tag1: jekyll
-tag2: firebase
+meta_desc: Here are a big list of links you can go through inorder to build any thing you think. !!
+tag1: create
+tag2: anything
 ---
 
 
