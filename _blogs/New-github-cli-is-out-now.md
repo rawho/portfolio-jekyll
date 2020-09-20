@@ -17,6 +17,13 @@ tag2: cli
       - [Homebrew](#homebrew)
       - [MacPorts](#macports)
   - [Linux](#linux)
+    - [Debian, Ubuntu Linux (apt)](#debian-ubuntu-linux-apt)
+    - [Fedora, Centos, Red Hat Linux (dnf)](#fedora-centos-red-hat-linux-dnf)
+    - [openSUSE/SUSE Linux (zypper)](#opensusesuse-linux-zypper)
+  - [Community-supported methods](#community-supported-methods)
+    - [Arch Linux](#arch-linux)
+    - [Android](#android)
+    - [Kiss Linux](#kiss-linux)
   - [Windows](#windows)
     - [scoop](#scoop)
     - [Chocolatey](#chocolatey)
@@ -25,6 +32,10 @@ tag2: cli
   - [Core Commands](#core-commands)
   - [Additional Commands](#additional-commands)
   - [Flags](#flags)
+- [Examples](#examples)
+    - [Create gist](#create-gist)
+    - [Create Pull Request](#create-pull-request)
+    - [Create a repo](#create-a-repo)
 
 
 # GitHub CLI
@@ -55,6 +66,8 @@ tag2: cli
 
 ## Linux
 
+### Debian, Ubuntu Linux (apt)
+
 Install:
 
 ```bash
@@ -74,7 +87,65 @@ sudo apt update
 sudo apt install gh
 ```
 
+### Fedora, Centos, Red Hat Linux (dnf)
 
+Install:
+
+```bash
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh
+```
+
+Upgrade:
+
+```bash
+sudo dnf update gh
+```
+
+### openSUSE/SUSE Linux (zypper)
+
+Install:
+
+```bash
+sudo zypper addrepo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo zypper ref
+sudo zypper install gh
+```
+
+Upgrade:
+
+```bash
+sudo zypper ref
+sudo zypper update gh
+```
+
+## Community-supported methods
+
+Github team does not directly maintain the following packages or repositories.
+
+### Arch Linux
+
+Arch Linux users can install from the [community repo][arch linux repo]:
+
+```bash
+sudo pacman -S github-cli
+```
+
+### Android
+
+Android users can install via Termux:
+
+```bash
+pkg install gh
+```
+
+### Kiss Linux
+
+Kiss Linux users can install from the [community repos](https://github.com/kisslinux/community):
+
+```bash
+kiss b github-cli && kiss i github-cli
+```
 ## Windows
 
 `gh` is available via **scoop**, **Chocolatey**
@@ -145,4 +216,30 @@ gh <command> <subcommand> [flags]
 `--version`:   Show gh version
 
 
-Read the manual at [https://cli.github.com/manual/](https://cli.github.com/manual/)
+
+# Examples
+
+### Create gist
+```
+gh gist create --public hello.py
+```
+
+### Create Pull Request
+```
+gh pr create --title "The bug is fixed" --body "Everything works again"
+gh pr create --reviewer monalisa,hubot
+gh pr create --project "Roadmap"
+gh pr create --base develop --head monalisa:feature
+```
+
+### Create a repo
+```
+gh repo create my-project
+```
+
+Read more at [https://cli.github.com/manual/](https://cli.github.com/manual/)
+
+
+
+[releases page]: https://github.com/cli/cli/releases/latest
+[arch linux repo]: https://www.archlinux.org/packages/community/x86_64/github-cli
