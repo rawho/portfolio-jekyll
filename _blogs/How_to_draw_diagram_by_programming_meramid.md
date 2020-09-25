@@ -86,12 +86,6 @@ Example:
   </body>
 </html>
 ```
-<style>
-.meramid{
-  color: #FFF;
-
-}
-</style>
 
 This will produce this output:
 <div class="mermaid">
