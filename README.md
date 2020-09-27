@@ -6,6 +6,13 @@ Go and see in action https://rahulmanoj.xyz
 
 If you want to take this to your local machine for testing or development, You can do the following:
 
+> 📢 **PSA for those who want to fork or copy this repo and use it for their own site:**
+>
+> If You like this website and want to make your's, You can surely do that !!
+> Please be a decent person and give me proper credit by linking back to my website! 
+> 
+
+
 ## Prerequisites
 
 - [Ruby](https://www.ruby-lang.org/en/downloads/) version **2.5.0** or higher, including all development headers (check your Ruby version using `ruby -v`)
