@@ -1,18 +1,18 @@
 ---
 layout: blogs
-permalink: /blogs/how-to-draw-diagrams-by-coding-using-mermaid
-title: How to draw diagrams in our markdown using mermaid
-img_path: /static/images/blogs/mermaid.png
-description: Are you tired of drawing diagrams? THen you are in right place. Here i will show you how to draw diagrams in our markdown file using mermaid
-meta_desc: Are you tired of drawing diagrams? THen you are in right place. Here i will show you how to draw diagrams in our markdown file using mermaid. Lets see how to draw diagrams in our markdown!!
-tag1: markdown
-tag2: mermaid
+permalink: /blogs/design-resources-for-developers
+title: Design Resource For Developers
+img_path: /static/images/blogs/design-resourse.png
+description: Here is a huge list of all the developer resources for productivity
+meta_desc: Here is a huge list of all the developer resources and tools for productivity
+tag1: developer
+tag2: tools
 display: f
 ---
 
 
-![Repository Banner](headerimage.png)
-#### Please read [`contributing guidelines`](./contributing.md) before submitting new resources.
+![Repository Banner](/static/images/blogs/design-resourse.png)
+#### All Credits goes to [bradtraversy](https://github.com/bradtraversy/design-resources-for-developers), I just copy paste it thats all 😊
 
 ## Table of Contents
 
