@@ -7,6 +7,7 @@ meta_desc: how to use github cli ?? GitHub CLI. gh is GitHub on the command line
 description: GitHub CLI. gh is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code. GitHub CLI brings GitHub to your terminal. It reduces context switching, helps you focus, and enables you to more easily script and create your own workflows.
 tag1: github
 tag2: cli
+display: t
 ---
 
 # Table of contents

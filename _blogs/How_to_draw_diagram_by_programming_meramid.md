@@ -7,6 +7,7 @@ description: Are you tired of drawing diagrams? THen you are in right place. Her
 meta_desc: Are you tired of drawing diagrams? THen you are in right place. Here i will show you how to draw diagrams in our markdown file using mermaid. Lets see how to draw diagrams in our markdown!!
 tag1: markdown
 tag2: mermaid
+display: t
 ---
 
 # Table of contents

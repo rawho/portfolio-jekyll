@@ -40,3 +40,35 @@ Once it is installed successfully you are ready to test my portfolio locally and
 - This will create a server at port 4000, You can visit http://localhost:4000, there you can see the website.
 
 If you like this jekyll and want to know more [click here](https://jekyllrb.com/docs/)
+
+
+## Writing blogs
+
+To write blogs create a file with extension md, inside `_blogs` folder
+
+You have to add some metadata to this file
+
+```
+---
+layout: blogs
+permalink: /blogs/create-anything-you-like/
+title: Create anything you like
+img_path: /static/images/blogs/feynman.png
+description: Here are a big list of links you can go through inorder to build any thing you think. !!
+meta_desc: Here are a big list of links you can go through inorder to build any thing you think. !!
+tag1: create
+tag2: anything
+display: f
+---
+```
+**After this metadata you can write your content in [markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d) syntax**
+
+Lets take a look at it,
+Since this site is highly Search Engine Optimised, you have to give meta_desc here. 
+- **layout**: This is the layout you can see in `_layouts` folder
+- **permalink**: This will be you url to see that blog
+- **img_path**: This will be the thumbnail to your blog
+- **meta_desc**: This will be sent as the desc of meta tag. Give a better desc, this will determine the google index, so while writing research about meta keywords, for better SEO
+- **display**: for this you have 2 options - `t` or `f`
+    - if you give `t`, Then it will be displayed in the Home page
+    - if you give `f`, Then it will be displayed when you go to see all blogs (ie http://localhost/blogs)

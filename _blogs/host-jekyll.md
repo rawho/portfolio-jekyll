@@ -6,6 +6,7 @@ img_path: /static/images/blogs/jekyll.png
 description: Jekyll is a simple, blog-aware, static site generator. Firebase provides free hosting.
 tag1: jekyll
 tag2: firebase
+display: f
 ---
 
 

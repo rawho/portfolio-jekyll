@@ -7,6 +7,7 @@ meta_desc: In this blog i will show you how to install and use aws cli with exam
 description: The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
 tag1: AWS
 tag2: cli
+display: f
 ---
 
 # Installation

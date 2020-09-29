@@ -6,6 +6,7 @@ img_path: /static/images/pro.JPG
 description: You may be thinking who is Rahul T ?? (rahulmanojcet), he is a Web Developer, he is a student at College of Engineering, Trivandrum.
 tag1: Rahul T
 tag2: CET
+display: f
 ---
 <style>
      .social-container {

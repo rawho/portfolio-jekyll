@@ -9,6 +9,7 @@
         <div class="row">
             <!-- Blog Item  -->
             {% for blog in site.blogs %}
+            {% if blog.display == 't' %}
             <div class="blog-item padd-15">
                 <div class="blog-item-inner shadow-dark">
                     <div class="blog-img">
@@ -24,6 +25,7 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
             <!-- Blog Item End -->
             

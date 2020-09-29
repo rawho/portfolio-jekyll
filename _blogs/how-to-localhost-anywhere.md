@@ -7,6 +7,7 @@ description: Do you want to share your localhost to anywhere in the world. Ngrok
 meta_desc: Do you want to share your localhost to anywhere in the world. Ngrok comes with a solution for this!
 tag1: ngrok
 tag2: localhost
+display: t
 ---
 
 # How to install and set up ngrok
