@@ -3,5 +3,5 @@ layout: default
 data_category: python
 img_path: /static/images/flipkart-scrap.png
 title: Flipkart scraper
-link: https://github.com/rawho/flipkart-scraper
+github_link: https://github.com/rawho/flipkart-scraper
 ---

@@ -24,11 +24,25 @@
                     </div>
                     <div class="portfolio-info">
                         <h4>{{ portfolio.title }}</h4>
-                        <a href="{{ portfolio.link }}" target="_blank">
-                            <div class="icon">
-                            <i class="fa fa-github"></i>
+                        <a href="{{ portfolio.github_link }}" target="_blank">
+                            <div class="icon" style="display: flex;">
+                                <i class="fa fa-github"></i>
                             </div>
                         </a>
+                        {% if portfolio.website_link %}
+                        <a href="{{ portfolio.website_link }}" target="_blank">
+                            <div class="icon" style="right: 90px;">
+                                <i class="fa fa-link" style="font-size: 20px;"></i>
+                            </div>
+                        </a>
+                        {% endif %}
+                        {% if portfolio.info_link %}
+                        <a href="{{ portfolio.info_link }}" target="_blank">
+                            <div class="icon" style="right: 130px;">
+                                <i class="fa fa-info-circle" style="font-size: 20px;"></i>
+                            </div>
+                        </a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
