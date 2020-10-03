@@ -14,9 +14,17 @@
   .container .counter p{
     font-size: 18px;
   }
+  #phone-tip{
+    display: none;
+  }
+  @media(max-width: 676px){
+    #phone-tip{
+      display: block;
+    }
+  }
 </style>
 <section class="home section active" id="home">
-    <div class="container">
+    <div style="padding-bottom: 0;" class="container">
         <div class="intro">
             <div class="intro-box">
                 <img src="/static/images/bg.jpg" alt="background" class="bg">
@@ -38,6 +46,7 @@
           <h2 id="count">0</h2>
           <p>Times</p>
         </div>
+        <p id="phone-tip" style="color: #ffc107; font-size: 22px; line-height: 2rem;">To explore more click the icon on <span style="color: #b1551f;">top-left</span> corner</p>
     </div>
 </section>
 <script>
