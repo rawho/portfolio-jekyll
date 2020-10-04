@@ -43,7 +43,7 @@ for (let i=0; i<totalFilterBtn; i++){
 // portfolio Lightbox
 const lightbox=document.querySelector(".lightbox"),
         lightboxImg=lightbox.querySelector(".lightbox-img"),
-        lightboxClose=lightbox.querySelector(".lightbox-close")
+        lightboxClose=lightbox.querySelector(".lightbox-close"),
         lightboxText=lightbox.querySelector(".caption-text"),
         lightboxCounter=lightbox.querySelector(".caption-counter")
 let itemIndex=0
@@ -77,7 +77,7 @@ function toggleLightbox() {
     lightbox.classList.toggle("open")
 }
 function changeItem(){
-    imgSrc=portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src")
+    let imgSrc=portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src")
     lightboxImg.src=imgSrc
     lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML
     lightboxCounter.innerHTML=(itemIndex + 1) + " of " + totalPortfolioItems
@@ -183,21 +183,26 @@ function asideSectionTogglerBtn() {
 // contact form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyvozAyjpDbEvVsIROyWT8Kzjfkz2RmFU05k-Tb8_ifv2cOxw9k/exec'
 const form = document.forms['google-sheet']
-function success() {
-   let x = document.querySelector(".success-msg").style.display = 'block'
-   setTimeout(function(){
-            document.querySelector(".success-msg").style.display = "none"
-        }, 3000)
-}
+
 
 document.addEventListener('submit', function(){
     document.querySelector('#send-msg').onclick = function(){
-        success()
+        Swal.fire(
+            'Sent Successfully',
+            'Thank you for your response',
+            'success'
+          )
     }
 })
 $(document).ready(function(){
     $('form').on("submit",function(){
-        success()
+        Swal.fire(
+            'Sent Successfully',
+            'Thank you for your response',
+            'success'
+          )
+
+        document.getElementById("myform").reset()
     });
 });
 
