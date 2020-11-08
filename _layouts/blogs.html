@@ -41,6 +41,33 @@
     </script>
 </head>
 <style>
+    /* Scrollbar  */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    @media(max-width: 676px){
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #000000;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #ffc107;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #943f1d;
+    }
+
+  
     *{
         margin: 0;
     }

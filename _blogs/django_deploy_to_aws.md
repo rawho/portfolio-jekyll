@@ -11,8 +11,8 @@ display: t
 ---
 
 ### Prerequisite: 
-- A django application created and pushed to github
-- An aws account
+- A [django application](/blogs/creating-a-django-project-from-scratch) created and pushed to github
+- [An aws account](https://console.aws.amazon.com/)
 
 
 >Note: For this demo
@@ -178,3 +178,6 @@ sudo service supervisor reload
 ```
 
 if you go to the ip adress you can see the application
+
+
+- [deploy django app to Heroku](/blogs/deploying-django-application-to-heroku)
