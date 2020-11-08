@@ -426,3 +426,5 @@ Finally lets create a requirements.txt file by
 
 Now our project is ready for deployment
 
+- [Deploy to AWS](/blogs/deploying-django-application-to-aws)
+- [Deploy to heroku]
