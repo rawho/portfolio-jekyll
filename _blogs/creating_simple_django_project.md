@@ -10,6 +10,7 @@ tag2: webdev
 display: t
 ---
 
+[Download as pdf](/static/pdf/Creating%20a%20simple%20django%20project.pdf)
 
 # Create Django Project
 
@@ -427,4 +428,4 @@ Finally lets create a requirements.txt file by
 Now our project is ready for deployment
 
 - [Deploy to AWS](/blogs/deploying-django-application-to-aws)
-- [Deploy to heroku]
+- [Deploy to heroku](/blogs/deploying-django-application-to-heroku)

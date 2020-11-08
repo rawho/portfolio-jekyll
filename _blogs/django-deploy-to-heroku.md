@@ -10,6 +10,8 @@ tag2: heroku
 display: t
 ---
 
+[Download as pdf](/static/pdf/deploy%20django%20app%20to%20heroku.pdf)
+
 # Deploy Django app to heroku for free
 
 ### Prerequisite: 

@@ -10,6 +10,9 @@ tag2: aws
 display: t
 ---
 
+[Download as pdf](/static/pdf/Django%20on%20AWS.pdf)
+
+
 ### Prerequisite: 
 - A [django application](/blogs/creating-a-django-project-from-scratch) created and pushed to github
 - [An aws account](https://console.aws.amazon.com/)
