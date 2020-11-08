@@ -6,7 +6,7 @@ img_path: /static/images/blogs/whatsapp-tricks.jpg
 description: WhatsApp's click to chat feature allows you to begin a chat with someone without having their phone number saved in your phone's address book.
 tag1: Whatsapp
 tag2: API
-display: t
+display: f
 ---
 
 ## Link to whatsapp
