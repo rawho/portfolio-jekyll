@@ -5,4 +5,3 @@ _site
 vendor
 /python-send-msg/credentials.json
 /python-send-msg/creds.json
-.well-known
