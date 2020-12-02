@@ -185,15 +185,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyvozAyjpDbEvVsIROyWT
 const form = document.forms['google-sheet']
 
 
-document.addEventListener('submit', function(){
-    document.querySelector('#send-msg').onclick = function(){
-        Swal.fire(
-            'Sent Successfully',
-            'Thank you for your response',
-            'success'
-          )
-    }
-})
+
 $(document).ready(function(){
     $('form').on("submit",function(){
         Swal.fire(
