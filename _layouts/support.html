@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:site_name" content="Rahul T student of CET">
+    <meta property="og:title" content="support Rahul T | rahulmanojcet" />
+    <meta property="og:url" content="https://rahulmanoj.xyz/support" />
+    <meta property="og:image" itemprop="image" content="http://avatars2.githubusercontent.com/u/67005725?v=4" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="You can support Rahul T here in the form of bitcoin, eth or through phonepay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="rahulmanojcet, rahult, Rahul T, rahul, Portfolio, support rahul, Rahul Cet, cet, who is rahul">
+    <title>support rahulmanojcet</title>
+    <meta name="description" content="Hi! My name is Rahul T (@rahulmanojcet). I am a web developer, you can support me here">
+    <meta name="robots" content="index, follow" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/favicon/site.webmanifest">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172437564-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172437564-4');
+    </script>
+
+    <link rel="stylesheet" href="/static/css/support.css">
+
+</head>
+<body>
+    <center><h1 class="heading">Support Me</h1></center>
+    <div class="container">
+       
+
+        <div class="box">
+            <h1>Send some Bitcoins</h1>
+            <img src="/static/images/qr/bitcoin.png" alt="">
+            <input readonly type="text" value="33Ci3SjEwARbVLNJDHUsESXiNCon1LKzEA" name="" id="bitcoin">
+            <div class="tooltip">
+                <button onclick="copy('bitcoin')"><span class="tooltiptext" id="myTooltipbitcoin">Copy to clipboard</span>Copy text</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <h1>Phone pay</h1>
+            <img width="40%" src="/static/images/qr/phonepay.jpeg" alt="">
+            <input readonly type="text" value="9747406685" name="" id="phonepay">
+            <div class="tooltip">
+                <button onclick="copy('phonepay')"><span class="tooltiptext" id="myTooltipphonepay">Copy to clipboard</span>Copy text</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <h1>Send some Ethereum</h1>
+            <img src="/static/images/qr/ethereum.png" alt="">
+            <input readonly type="text" value="0xa210643b67F4BcDB62ec7cF1572cc96f6986480a" name="" id="ethereum">
+            <div class="tooltip">
+                <button onclick="copy('ethereum')"><span class="tooltiptext" id="myTooltipethereum">Copy to clipboard</span>Copy text</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <script>
+        function copy(coin) {
+            /* Get the text field */
+            var copyText = document.getElementById(coin);
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+            var tooltip = document.getElementById("myTooltip" + coin);
+            tooltip.innerHTML = "Copied";
+        }
+
+
+
+    </script>
+</body>
+</html>

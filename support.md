@@ -1,0 +1,4 @@
+---
+layout: support
+permalink: /support/
+---
