@@ -658,6 +658,15 @@ input, textarea,select{
     padding-left: 37px;
     padding-bottom: 50px;
 }
+.about .about-content .timeline .timeline-item img{
+    width: 80%;
+}
+
+.about .about-content .timeline .timeline-item p a{
+    color: #ffc107;
+    
+}
+
 .about .about-content .timeline .timeline-item:last-child{
     padding-bottom: 0;
 }
