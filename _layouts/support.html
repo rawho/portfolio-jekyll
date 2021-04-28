@@ -17,7 +17,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/static/images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172437564-4"></script>
     <script>
@@ -31,8 +33,33 @@
     <link rel="stylesheet" href="/static/css/support.css">
 
 </head>
+
+<style>
+    .go-back-home{
+        position: fixed;
+        background-color: #ffc107;
+        padding: 5px 10px;
+        right: 10px;
+        top: 10px;
+    }
+    .go-back-home p{
+        margin: 0;
+    }
+    @media(max-width: 676px){
+        .go-back-home{
+            padding: 2px 2px;
+        }
+        
+    }
+</style>
 <body>
     <center><h1 class="heading">Support Me</h1></center>
+
+    <a href="/">
+    <div class="go-back-home">
+        <p> <i class="fa fa-arrow-left"></i> Home</p>
+    </div>
+    </a>
     <div class="container">
        
 
