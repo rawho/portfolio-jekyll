@@ -1,6 +1,6 @@
 ---
 layout: default
-data_category: other
+data_category: javascript
 img_path: /static/images/linkedin-autofollow.png
 title: Linkedin AutoFollow
 github_link: https://github.com/rawho/linkedin-autofollow
