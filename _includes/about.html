@@ -25,7 +25,7 @@
                                 <p>Birthday : <span>22 Nov 2001</span></p>
                             </div>
                             <div class="info-item padd-15">
-                                <p>Age : <span>18</span></p>
+                                <p>Age : <span>19</span></p>
                             </div>
                             <div class="info-item padd-15">
                                 <p>website : <span>rahulmanoj.xyz</span></p>
@@ -78,10 +78,10 @@
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <h5>React</h5>
+                                <h5>NodeJS</h5>
                                 <div class="progress">
-                                    <div class="progress-in" style="width: 25%;"></div>
-                                    <div class="skill-percent">25%</div>
+                                    <div class="progress-in" style="width: 75%;"></div>
+                                    <div class="skill-percent">75%</div>
                                 </div>
                             </div>
                         </div>
@@ -93,49 +93,24 @@
                         <div class="row">
                             <div class="timeline-box padd-15">
                                 <div class="timeline shadow-dark">
-                                    <!-- Timeline Item  -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h6 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2019 - Present
-                                        </h6>
-                                        <h4 class="timeline-title">Btech in Computer Science</h4>
-                                        <p class="timeline-text">
-                                        I am currently studying Computer Science
-                                        at College of Engineering, Trivandrum.
-                                        Now i am in 2nd year
-                                        </p>
-                                    </div>   
-                                    <!-- Timeline Item End  -->
 
-                                    <!-- Timeline Item  -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h6 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2017 - 2019
-                                        </h6>
-                                        <h4 class="timeline-title">Higher Secondary</h4>
-                                        <p class="timeline-text">
-                                        In the year 2017 - 19 I was studying plus one plus two 
-                                        at GHSS Puthur, Which is close to my house. I scored 1181 out of 1200
-                                        Also i got full marks for Phy, Che, Maths
-                                        </p>
-                                    </div>   
-                                    <!-- Timeline Item End  -->
 
+                                    {% for education in site.data.education reversed %}
                                     <!-- Timeline Item  -->
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
                                         <h6 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2012 - 2017
+                                            <i class="fa fa-calendar"></i> {{ education.period }}
                                         </h6>
-                                        <h4 class="timeline-title">High School</h4>
+                                        <h4 class="timeline-title">{{education.title}}</h4>
                                         <p class="timeline-text">
-                                        During this time i was studying at SNHSS vadakara.
-                                        I got full A+ in my 10th Std
+                                        {{ education.description }}
                                         </p>
                                     </div>   
                                     <!-- Timeline Item End  -->
+                                    {% endfor %}
+
+                                   
                                 </div>
                             </div>                                 
                         </div>
@@ -146,63 +121,24 @@
                             <div class="timeline-box padd-15">
                                 <div class="timeline shadow-dark">
 
+
+                                    {% for experience in site.data.experience reversed %}
                                      <!-- Timeline Item  -->
                                      <div class="timeline-item">
                                         <div class="circle-dot"></div>
                                         <!-- <h6 class="timeline-date">
                                             <i class="fa fa-calendar"></i> 2021 - present
                                         </h6> -->
-                                        <h4 class="timeline-title">Webmaster for Impulse</h4>
-                                        
+                                        <h4 class="timeline-title">{{ experience.title }}</h4>
+                                        <p class="timeline-text">{{ experience.description }}</p>
                                         <p class="timeline-text">
-                                            <a target="_blank" href="https://impulsecet.in">impulsecet.in</a>
+                                            <a target="_blank" href="{{ experience.link }}">{{ experience.shortlink }}</a>
                                         </p>
                                     </div>   
                                     <!-- Timeline Item End  -->
+                                    {% endfor %}
 
 
-                                    <!-- Timeline Item  -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <!-- <h6 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021 - present
-                                        </h6> -->
-                                        <h4 class="timeline-title">Webmaster at IEEE SB CET</h4>
-                                       
-                                        <p class="timeline-text">
-                                            <a target="_blank" href="http://ieee.cet.ac.in">ieee.cet.ac.in</a>
-                                        </p>
-                                    </div>   
-                                    <!-- Timeline Item End  -->
-
-                                    <!-- Timeline Item  -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <!-- <h6 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2019 - 2021
-                                        </h6> -->
-                                        <h4 class="timeline-title">Webmaster for SOACET</h4>
-                                        <p class="timeline-text">
-                                            <a target="_blank" href="https://soacet.in">soacet.in</a>
-                                        </p>
-                                    </div>   
-                                    <!-- Timeline Item End  -->
-
-
-                                    <!-- Timeline Item  -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <!-- <h6 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2019 - 2021
-                                        </h6> -->
-                                        <h4 class="timeline-title">Webmaster for Bitflip</h4>
-                                        <p class="timeline-text">
-                                            <a target="_blank" href="https://bit-flip.tech">bit-flip.tech</a>
-                                        </p>
-                                    </div>   
-                                    <!-- Timeline Item End  -->
-
-                                    
                                 </div>
                             </div>                                 
                         </div>
